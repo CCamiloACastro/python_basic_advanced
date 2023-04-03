@@ -1,9 +1,9 @@
 """
-Una funcion es un bloque de codigo diseñado para relaizar una actividad
+Una función es un bloque de código diseñado para realizar una actividad
 
-def nombrefuncion():
+def nombre_funcion():
 
-funcion
+lowercase_with_underscores
 """
 
 

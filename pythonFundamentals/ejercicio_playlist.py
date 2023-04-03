@@ -4,7 +4,7 @@ print(playlist)
 
 def app():
     """
-    Aplicacion principal donde se coloca un titulo a una playlist
+    Aplicación principal donde se coloca un título a una playlist
     y se agregan playlist
     Returns:
 
@@ -62,8 +62,8 @@ def show_songs(name_playlist):
     de una manera organizada
 
     Args:
-        name_playlist: nombre de la playlist a la que se le va
-        mostrar las canciones
+        name_playlist: nombre de la playlist a la cual se le va a
+        mostrar el nombre de las canciones
 
     Returns:
         No retorna nada

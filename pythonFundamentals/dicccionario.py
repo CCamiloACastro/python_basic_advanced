@@ -1,9 +1,7 @@
-"""
-Un objeto es en cierta medida similar a un array, te permite agrupar contenido de diferente tipos de datos
+"""Un objeto es en cierta medida similar a un array, permite agrupar contenido de diferentes tipos de datos
+Usualmente, se accede por medio de una array por medio de su índice, en un objeto se accede por medio de una llave key"""
 
-Usualmente se accede por medio de una array por medio de su indice, en un objeto se accede por medio de una llave key
-"""
-# Creacion de un diccionario simple
+# Creación de un diccionario simple
 song = {
     'artista': 'Metallica',
     'cancion': 'Enter Sandman',
@@ -31,9 +29,9 @@ player['nombre'] = 'Juan'
 player['puntaje'] = 0
 print(player)
 
-# Acceder  aun valor
+# Acceder aun valor
 print(player.get('nombre'))
-print(player.get('edad','No existe el valor de edad'))
+print(player.get('edad', 'No existe el valor de edad'))
 
 # Iterar en el diccionario
 for keys, values in player.items():
@@ -47,5 +45,4 @@ print(player)
 # Eliminar diccionario
 
 del player
-print(player)
 # NameError: name 'player' is not defined

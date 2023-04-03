@@ -2,7 +2,7 @@
 Operadores de Pertenencia
 Un operador de pertenencia se emplea para identificar pertenencia en alguna secuencia (listas, strings, tuplas).
 
-in y not in
+"in" y "not in"
 
 """
 languages = ['español', 'ingles', 'aleman', 'japones', 'italiano', 'vietnamita', 'chibcha']
