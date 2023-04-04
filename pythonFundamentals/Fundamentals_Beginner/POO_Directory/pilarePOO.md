@@ -18,3 +18,9 @@ Se puede crear una clase que sea hijo o una copia de otra, al heredar una
 clase se tienen todos los métodos y atributos de la clase padre en el hijo,
 y se puede modificar en caso de que sea necesario
 
+## Polimorfismo
+Es la habilidad de tener diferentes comportamientos basados en que subclase se
+está utilizando, relacionado muy estrechamente como herencia.
+
+Básicamente, es cuando se hereda de una clase superior pero se puede modificar
+métodos, variables...
