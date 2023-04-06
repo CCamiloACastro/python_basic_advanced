@@ -21,6 +21,27 @@ print(song)
 # Reemplazar valor existente (si existe lo reemplaza)
 song['cancion'] = 'Live to Die'
 
+print(song.items())
+print(song.keys())
+print(song.values())
+
+# Crear un diccionario de lista o de las claves de otros diccionarios
+my_list = ["Nombre", 1, "Piso"]
+
+my_new_dict = dict.fromkeys(my_list)
+print(my_new_dict)
+my_new_dict = dict.fromkeys(("Nombre", 1, "Piso"))
+print(my_new_dict)
+my_new_dict = dict.fromkeys(song)
+print(my_new_dict)
+my_new_dict = dict.fromkeys(song, "vistas")
+print(my_new_dict)
+# Conversion a otro tipo de datos
+print('Conversion a otro tipo de datos')
+print(my_new_dict.values())
+print(list(dict.fromkeys(list(my_new_dict.values())).keys()))
+print(tuple(my_new_dict))
+print(set(my_new_dict))
 player = {}
 print(player)
 
