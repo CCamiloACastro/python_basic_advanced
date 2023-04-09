@@ -34,6 +34,31 @@ ValueError	Raised when there is a wrong value in a specified data type
 ZeroDivisionError	Raised when the second operator in a division is zero"""
 
 try:
-    print('a'+3)
+    print('a' + 3)
 except TypeError as tp:
     print(tp)
+
+"""
+try block  -> permite testear un bloque de código si tiene errores.
+
+except block -> Permite manipular el error.
+
+else block -> Permite ejecutar código cuando no hay error.
+
+finally block -> Permite ejecutar codigo, independientemente del resultado de los bloque try y except.
+"""
+try:
+    f = open("exceptionsfile.txt")  # ira a la excepción debido a que se abre en modo lectura NO en escritura
+    # f = open("exceptionsfile.txt",'w')  # Funcionara debido a que se abre en modo escritura
+    try:
+        f.write("Lorum Ipsum")
+    except Exception as exception:
+        print(f"Something went wrong when writing to the file")
+        print(f'{exception}')
+    else:
+        print("Nothing went wrong")
+    finally:
+        f.close()
+        print('file closed')
+except:
+    print("Something went wrong when opening the file")

@@ -1,0 +1,10 @@
+{
+  "name": "Camilo",
+  "age": 24,
+  "country": "Colombia",
+  "languages": [
+    "Python",
+    "Flutter",
+    "Matlab"
+  ]
+}

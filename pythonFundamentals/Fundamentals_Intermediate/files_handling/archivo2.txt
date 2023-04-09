@@ -1,0 +1,6 @@
+Mi nombre es Camilo
+Soy Colombiano
+24 años
+Y estoy practicando Python
+para hacer diferentes programas
+que puedan ayudar a la sociedad

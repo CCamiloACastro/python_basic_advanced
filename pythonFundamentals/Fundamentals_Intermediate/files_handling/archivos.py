@@ -7,6 +7,8 @@
 
 "x" - Create - returns an error if the file exists
 
+"r+ , w+ , a+" reading and writing (a mi no me permite hacer lectura)
+
 f = open("archivo.txt", "rt") "t" text default value, "b" binario (imagenes)
 """
 
@@ -14,7 +16,7 @@ f = open("archivo.txt", "rt") "t" text default value, "b" binario (imagenes)
 def app():
     archivo = open('archivo.txt', 'w')  # w es de escritura por default es lectura
 
-    # Generar numeros en archivo
+    # Generar números en archivo
     for i in range(0, 20):
         archivo.write('Esta es la linea de David' + str(i) + '\r\n')
 

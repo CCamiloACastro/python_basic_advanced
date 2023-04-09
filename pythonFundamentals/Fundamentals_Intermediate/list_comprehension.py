@@ -39,23 +39,32 @@ def sum_five(number):
     return number + 5
 
 
+print("Sumar cinco a un alista de 0-7")
 my_list = [sum_five(i) for i in range(8)]
+print(my_list)
+my_list = [i + 5 for i in range(8)]
+print(my_list)
+# la función map se explica en el script funciones_orden_superior
+my_list = list(map(lambda i: i + 5, range(8)))
 print(my_list)
 
 # Sin lista de comprensión
 
+print('Sin lista de comprensión')
 fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 newlist = []
 
-for x in fruits:
-  if "a" in x:
-    newlist.append(x)
+for fruit in fruits:
+    if "a" in fruit:
+        newlist.append(fruit)
 
 print(newlist)
 
 # con lista de comprensión
 
-newlist = [x for x in fruits if "a" in x]
+print('con lista de comprensión')
+
+newlist = [fruit for fruit in fruits if "a" in fruit]
 print(newlist)
 newlist = [x.upper() for x in fruits]
 print(newlist)
