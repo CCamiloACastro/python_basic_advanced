@@ -7,7 +7,8 @@
 En las siguientes secciones, se proporcionan vínculos a material adicional que te resulta útil.
 
 ## Álgebra
-* [variables](https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:intro-variables/v/what-is-a-variable), [coeficientes](https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equivalent-exp/cc-6th-parts-of-expressions/v/expression-terms-factors-and-coefficients) y [funciones](https://www.khanacademy.org/math/algebra-home/alg-functions)
+* [variables]
+* https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:foundation-algebra/x2f8bb11595b61c86:intro-variables/v/what-is-a-variable), [coeficientes](https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-equivalent-exp/cc-6th-parts-of-expressions/v/expression-terms-factors-and-coefficients) y [funciones](https://www.khanacademy.org/math/algebra-home/alg-functions)
 * [ecuaciones lineales](https://wikipedia.org/wiki/Linear_equation)
 * [logaritmos y ecuaciones logarítmicas](https://wikipedia.org/wiki/Logarithm)
 * [función sigmoidea](https://wikipedia.org/wiki/Sigmoid_function)
