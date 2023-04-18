@@ -19,7 +19,7 @@ print(sequence_of_integers)
 
 # Llenar matrices con números aleatorios en ciertos rangos
 print('random_integers_between_50_and_100')
-random_integers_between_50_and_100 = np.random.randint(low=50, high=101, size=(6))
+random_integers_between_50_and_100 = np.random.randint(low=50, high=101, size=6)
 print(random_integers_between_50_and_100)
 
 # Para crear valores aleatorios de punto flotante entre 0,0 y 1,0
