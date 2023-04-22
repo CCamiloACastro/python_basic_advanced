@@ -148,6 +148,12 @@ class MainWindow(QtWidgets.QMainWindow):
                         pixmap = QPixmap("./abc.png")
                         self.label.setPixmap(pixmap)
 
+                        """imagen = imagenes_prueba[
+                            4]  # AL ser la variable imagenes_prueba solo tiene lo que se le puso en el bloque anterior heheh
+                        imagen = np.array([imagen])
+                        prediccion = modelo.predict(imagen)"""
+
+
                     except Exception as e:
                         QMessageBox.critical(self, "Error",
                                              "An error occurred while decoding or saving the file:\n" + str(e))
