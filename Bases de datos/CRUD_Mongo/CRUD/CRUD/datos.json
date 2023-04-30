@@ -1,0 +1,20 @@
+{
+    "nombre": "Juan",
+    "apellido": "Perez",
+    "edad": 30,
+    "direccion": {
+      "calle": "Av. Siempre Viva",
+      "numero": 123,
+      "ciudad": "Springfield"
+    },
+    "telefonos": [
+      {
+        "tipo": "celular",
+        "numero": "555-1234"
+      },
+      {
+        "tipo": "casa",
+        "numero": "555-5678"
+      }
+    ]
+  }
