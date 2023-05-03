@@ -4,10 +4,10 @@ db = client.test
 col = db.person
 
 db.SalesDB.insert_one({
-    "name": "Linda",
-    "orderdate": "6/10/2021",
-    "species": "Dog",
-    "ownerAddress": "380 W. Fir Ave",
-    "chipped": True
+    "name": "Homero",
+    "orderdate": "3/05/2023",
+    "species": "Human",
+    "ownerAddress": "Avenida Siempreviva 742",
+    "gordo": True
 })
 

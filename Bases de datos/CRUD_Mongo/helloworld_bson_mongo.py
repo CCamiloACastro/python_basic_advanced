@@ -21,7 +21,7 @@ print(bson_bytes)
 # BSON to JSON
 json_example = bsonjs.dumps(bson_bytes)
 print(json_example)
-"""
+
 # '{ "hello" : "world" }'
 # '\x16\x00\x00\x00\x02hello\x00\x06\x00\x00\x00world\x00\x00'
 
@@ -29,7 +29,7 @@ print(json_example)
 client = MongoClient("localhost", 27017, document_class=RawBSONDocument)
 db = client.ejemplomongo
 # bson_bytes = bsonjs.loads('{"_id": 1, "x": 2}')
-bson_bytes = bsonjs.loads('{"Hola": "Camilo bb", "x": 2}')
+bson_bytes = bsonjs.loads('{"Hola": "Pepito bb", "x": 2}')
 print(bson_bytes)
 # insertar documentos
 result = db.prueba.insert_one(RawBSONDocument(bson_bytes))
@@ -44,4 +44,3 @@ bsonjs.dumps(raw_doc.raw)
 # Encontrar colecciones
 print(f'La colección prueba tiene la siguientes colecciones')
 print(db.prueba.find())
-"""
