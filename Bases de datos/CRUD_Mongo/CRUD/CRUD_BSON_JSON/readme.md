@@ -89,14 +89,24 @@ especificados.
 : Borra solamente el primer documento que cumple con los criterios de 
 búsqueda especificados
 
+    Si en la colección hay varios documentos que cumplen con los criterios de 
+    búsqueda especificados, delete_one() solo borrará el primer documento 
+    que encuentre y no afectará a los demás documentos.
+
 **delete_many()** 
 : Borra todos los documentos que cumplan con dichos criterios.
 
-    Si en la colección hay varios documentos que cumplen con los criterios de 
-    búsqueda especificados, delete_one() solo borrará el primer documento 
-    que encuentre y no afectará a los demás documentos. En cambio, 
-    delete_many() borrará todos los documentos que cumplan con los criterios 
-    de búsqueda.
+
+Operadores
+
+* `$eq` - equal - igual
+* `$lt` - low than - menor que
+* `$lte` - low than equal - menor o igual que
+* `$gt` - greater than - mayor que
+* `$gte` - greater than equal - mayor o igual que
+* `$ne` - not equal - distinto
+* `$in` - in - dentro de
+* `$nin` - not in - no dentro de
 
 Crear y borrar,
 Insert.json,

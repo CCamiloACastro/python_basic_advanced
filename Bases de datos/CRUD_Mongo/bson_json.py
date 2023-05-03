@@ -16,11 +16,12 @@ print(json_example)
 
 # JSON to BSON
 bson_bytes = bsonjs.loads('{"hello": "world"}')
+print(type(bson_bytes))
 print(bson_bytes)
 # BSON to JSON
 json_example = bsonjs.dumps(bson_bytes)
 print(json_example)
-
+"""
 # '{ "hello" : "world" }'
 # '\x16\x00\x00\x00\x02hello\x00\x06\x00\x00\x00world\x00\x00'
 
@@ -43,3 +44,4 @@ bsonjs.dumps(raw_doc.raw)
 # Encontrar colecciones
 print(f'La colección prueba tiene la siguientes colecciones')
 print(db.prueba.find())
+"""
