@@ -1,5 +1,11 @@
+Librerías que hay que instalar:
+
 `pip install pymongo`
+
 `pip install bson`
+
+`pip install python-bsonjs`
+
 
 ### CRUD Mongo con usando python, json y bson
 
@@ -100,21 +106,10 @@ búsqueda especificados
 Operadores
 
 * `$eq` - equal - igual
-* `$lt` - low than - menor que
+* `$lt` - lower than - menor que
 * `$lte` - low than equal - menor o igual que
 * `$gt` - greater than - mayor que
 * `$gte` - greater than equal - mayor o igual que
 * `$ne` - not equal - distinto
 * `$in` - in - dentro de
 * `$nin` - not in - no dentro de
-
-Crear y borrar,
-Insert.json,
-insert(),
-insertone(),
-insert Many(),
-remove(),
-insert para un array de objetos,
-tipos bson.
-
-CRUD, Crear y borrar, Insert.json, remove(), tipos bson.
