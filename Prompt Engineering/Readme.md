@@ -1,40 +1,63 @@
-HTML creado para describir un producto usando chatgpt
+# Prompting Principles
+- **Principle 1: Write clear and specific instructions**
+- **Principle 2: Give the model time to “think”**
 
-_se puede ver prompt_hello.html_
-<div>
-<h2>Mid-Century Inspired Office Chair</h2>
-<p>Introducing our mid-century inspired office chair, part of a beautiful family of office furniture that includes filing cabinets, desks, bookcases, meeting tables, and more. This chair is available in several options of shell color and base finishes, allowing you to customize it to your liking. You can choose between plastic back and front upholstery or full upholstery in 10 fabric and 6 leather options. The base finish options are stainless steel, matte black, gloss white, or chrome. The chair is also available with or without armrests, making it suitable for both home and business settings. It is even qualified for contract use, ensuring its durability and longevity.</p>
-<h3>Construction</h3>
-<p>The chair features a 5-wheel plastic coated aluminum base and a pneumatic chair adjust for easy raise/lower action. You can choose between soft or hard-floor caster options and two choices of seat foam densities: medium (1.8 lb/ft3) or high (2.8 lb/ft3). The chair is also available with armless or 8 position PU armrests, giving you even more customization options.</p>
-<h3>Materials</h3>
-<p>The shell base glider is made of cast aluminum with modified nylon PA6/PA66 coating, ensuring its sturdiness and durability. The shell thickness is 10 mm, providing ample support for the user. The seat is made of HD36 foam, ensuring comfort even during long periods of sitting.</p>
-<h3>Product ID</h3>
-<p>SWC-100, SWC-110</p>
-<h2>Product Dimensions</h2>
-<table>
-  <tr>
-    <td>Width</td>
-    <td>53 cm | 20.87"</td>
-  </tr>
-  <tr>
-    <td>Depth</td>
-    <td>51 cm | 20.08"</td>
-  </tr>
-  <tr>
-    <td>Height</td>
-    <td>80 cm | 31.50"</td>
-  </tr>
-  <tr>
-    <td>Seat Height</td>
-    <td>44 cm | 17.32"</td>
-  </tr>
-  <tr>
-    <td>Seat Depth</td>
-    <td>41 cm | 16.14"</td>
-  </tr>
-</table>
-<h3>Country of Origin</h3>
-<p>Italy</p>
-<h3>Name of the Company</h3>
-<p>Octofius inc</p>
-</div>
+Estas tácticas se muestran en el archivo guideline.py
+
+## Tácticas
+
+### Táctica 1: Usar delimitadores para indicar claramente las partes distintas de la entrada
+- Los delimitadores pueden ser algo como: ```, """, < >, `<tag> </tag>`, `:`
+
+### Táctica 2: Pedir un resultado estructurado
+- Por ejemplo pedir que el resultado se entregue en un archivo JSON
+- o en un archivo HTML
+### Táctica 3: Pedir al modelo que compruebe si se cumplen las condiciones
+(Usar condicionales)
+
+    Se le proporcionará un texto delimitado por comillas triples. 
+    Si contiene una secuencia de instrucciones, reescriba esas 
+    instrucciones en el siguiente formato: 
+    Paso 1 - ... 
+    Paso 2 - … … 
+    Paso N - … 
+    Si el texto no contiene una secuencia de instrucciones,
+    simplemente escriba "No se proporcionan pasos".
+
+    \"\"\"{text_1}\"\"\"
+
+### Táctica 4: "Few-shot" prompting
+Técnica de indicación que permite que un modelo procese ejemplos antes de intentar una tarea.
+El problema de hacer predicciones basadas en un número limitado de muestras.
+
+
+### Táctica 5: Especificar los pasos requeridos para completar una tarea
+
+También se puede pedir que su salida se dé en un formato específico
+
+    ... Realice las siguientes acciones: 
+    1 - Resuma el siguiente texto delimitado por triple backticks con 1 frase. 
+    2 - Traducir el resumen al francés. 
+    3 - Enumere cada nombre en el resumen en francés. 
+    4 - Muestra un objeto json que contiene las siguientes claves: 
+        french_summary, num_names. 
+    
+    Separe sus respuestas con saltos de línea.
+    
+    Use el siguiente formato:
+    Text: <text to summarize>
+    Summary: <summary>
+    Translation: <summary translation>
+    Names: <list of names in Italian summary>
+    Output JSON: <json with summary and num_names>
+
+
+### Táctica 6: Indicar al modelo que encuentre su propia solución antes de apresurarse a llegar a una conclusión.
+
+    determinar si la respuesta es correcta
+    primero trabaja en tu propia solución
+    luego compare las soluciones
+    No determine si la solución es correcta hasta tu hayas resuelto el problema
+
+    luego se divide por secciones usando delimitadores
+
